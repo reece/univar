@@ -1,0 +1,18 @@
+[build-system]
+requires = ["uv_build>=0.9,<1"]
+build-backend = "uv_build"
+
+[project]
+name = "univar"
+version = "0.0.1"
+description = "Mock client of the univrs models: hello-world serialization. Prototype."
+license = "Apache-2.0"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = ["univrs==0.0.1"]
+
+[project.scripts]
+univar = "univar:main"
+
+[project.urls]
+Repository = "https://github.com/reece/univar"

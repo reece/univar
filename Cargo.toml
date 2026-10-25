@@ -1,0 +1,13 @@
+[package]
+name = "univar"
+version = "0.0.1"
+edition = "2021"
+description = "Mock client of the univrs models: hello-world serialization. Prototype."
+license = "Apache-2.0"
+repository = "https://github.com/reece/univar"
+include = ["/src/main.rs", "/README.md", "/LICENSE"]
+
+[dependencies]
+# path is for local dev before univrs is on crates.io; `cargo publish` uses the version
+univrs = { version = "0.0.1", path = "../../univrs/main" }
+serde_json = "1"
